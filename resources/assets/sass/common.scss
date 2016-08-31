@@ -1,0 +1,40 @@
+
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+
+html, body {
+  background-color: #fff;
+  color: #636b6f;
+  font-family: 'Lato';
+  font-weight: 100;
+  height: 100vh;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+  font-weight: 100;
+}
+
+.Heading {
+  text-align: center;
+  font-weight: 100;
+}
+
+.Heading--large {
+  font-size: 9em;
+}
+
+.Heading--medium {
+  font-size: 6em;
+}
+
+.Heading--small{
+  font-size: 3em;
+}
+
+.Heading--inline {
+  display: inline-block;
+}
