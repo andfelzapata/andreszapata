@@ -2,6 +2,13 @@ const elixir = require('laravel-elixir');
 
 require('laravel-elixir-vue');
 
+require('laravel-elixir-vueify');
+
+/**
+ * Node Root
+ */
+const node = 'node_modules/';
+
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -14,6 +21,10 @@ require('laravel-elixir-vue');
  */
 
 elixir(mix => {
-    mix.sass('app.scss')
-       .webpack('app.js');
+
+    mix.sass('home.scss');
+    mix.browserify('home.js');
+
+    mix.copy(node + '/font-awesome/fonts', 'public/fonts/');
+
 });
